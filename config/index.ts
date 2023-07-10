@@ -1,6 +1,7 @@
 import { BlogConfig } from "@/config/type";
-import { FaGithub } from "react-icons/fa6";
-import { BiLink } from "react-icons/bi";
+import { FaGithub, FaBilibili } from "react-icons/fa6";
+import { BsSteam, BsTelegram, BsDiscord, BsTencentQq } from "react-icons/bs";
+import { AiFillTwitterCircle } from "react-icons/ai";
 const { createElement } = require("react");
 const colors = require("tailwindcss/colors");
 
@@ -11,12 +12,12 @@ const colors = require("tailwindcss/colors");
  */
 
 export const blogConfig: BlogConfig = {
-    url: 'https://next-sakurairo.qwq.xyz',
-    title: "Next Sakurairo",
-    description: "A blog system made with Next.js.",
+    url: 'https://qwq.xyz',
+    title: "cocdeshijieのBlog",
+    description: "qwq",
     author: "cocdeshijie",
-    typewriter: "by cocdeshijie",
-    articles_per_load: 5,
+    typewriter: "誰でも大好き!",
+    articles_per_load: 6,
 
     navigation: [
         {
@@ -24,27 +25,18 @@ export const blogConfig: BlogConfig = {
             href: "/"
         },
         {
-            title: "Documentation",
-            child: [
-                {
-                    title: "Developer Documentation",
-                    href: "/articles/documentation/developer-en-US"
-                },
-                {
-                    title: "User Documentation",
-                    href: "/articles/documentation/user-en-US"
-                }
-            ]
+            title: "All Articles",
+            href: "/articles"
         },
         {
-            title: "Content Components",
-            child: [
-                {
-                    title: "My Anime List Component",
-                    href: "/my-anime-list"
-                }
-            ]
-        }
+            title: "Anime List",
+            href: "/anime-list"
+        },
+
+        {
+            title: "About Me",
+            href: "/about-me"
+        },
     ],
 
     header: {
@@ -54,6 +46,7 @@ export const blogConfig: BlogConfig = {
     background_image: {
         option: "APIBackgroundImage",
         settings: {
+            url: "https://www.loliapi.com/acg/pc/",
             filter: "grid"
         }
     },
@@ -61,16 +54,16 @@ export const blogConfig: BlogConfig = {
     hero: {
         option: "IconHero",
         settings: {
-            icon_path: "/img.png"
+            icon_path: "/cocdeshijie.gif"
         }
     },
 
     header_logo: {
         option: "TextLogo",
         settings: {
-            text_front: "Next Sakurairo",
+            text_front: "cocdeshijie",
             text_middle: "の",
-            text_end: "Site",
+            text_end: "Blog",
             text_bottom: "qwq~"
         }
     },
@@ -79,12 +72,37 @@ export const blogConfig: BlogConfig = {
         {
             title: "GitHub",
             icon: createElement(FaGithub),
-            href: "https://github.com/Next-Sakurairo/Next-Sakurairo"
+            href: "https://github.com/cocedshijie"
+        },
+        {
+            title: "Bilibili",
+            icon: createElement(FaBilibili),
+            href: "https://space.bilibili.com/60559166"
+        },
+        {
+            title: "Steam",
+            icon: createElement(BsSteam),
+            href: "https://steamcommunity.com/id/cocdeshijie"
+        },
+        {
+            title: "Telegram",
+            icon: createElement(BsTelegram),
+            href: "https://telegram.me/cocdeshijie"
         },
         {
             title: "Twitter",
-            icon: createElement(BiLink),
-            href: "https://next-sakurairo.qwq.xyz"
+            icon: createElement(AiFillTwitterCircle),
+            href: "https://twitter.com/cocdeshijie"
+        },
+        {
+            title: "Discord",
+            icon: createElement(BsDiscord),
+            href: "https://discordapp.com/channels/@me/390338482951815178/"
+        },
+        {
+            title: "Tencent QQ",
+            icon: createElement(BsTencentQq),
+            href: "tencent://message/?uin=2049302246"
         }
     ],
 
@@ -108,10 +126,10 @@ export const blogConfig: BlogConfig = {
     comment: {
         option: "GiscusComment",
         settings: {
-            repo: "Next-Sakurairo/Next-Sakurairo",
-            repo_id: "R_kgDOJ4Togw",
+            repo: "cocdeshijie/qwq.xyz",
+            repo_id: "R_kgDOJ4T77A",
             category: "Comments",
-            category_id: "DIC_kwDOJ4Tog84CXt46",
+            category_id: "DIC_kwDOJ4T77M4CXyVs",
             mapping: "url",
             input_position: "top",
             language: "en"
