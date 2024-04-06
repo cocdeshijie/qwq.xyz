@@ -1,4 +1,4 @@
-// import { NextResponse } from "next/server"
+import { NextResponse } from "next/server"
 
 export async function GET(request: Request) {
     // const { searchParams } = new URL(request.url)
@@ -15,5 +15,8 @@ export async function GET(request: Request) {
     //     }
     // }
     // return NextResponse.json(result)
-    return
+    return NextResponse.json( {
+                "ogTitle": "Error",
+        "ogDescription": "Error retrieving metadata.",
+    })
 }
