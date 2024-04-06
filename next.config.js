@@ -7,11 +7,7 @@ const nextConfig = {
                 hostname: '**'
             }
         ]
-    },
-    sentry: {
-        disableServerWebpackPlugin: true,
-        disableClientWebpackPlugin: true,
-    },
+    }
 }
 
 const { withContentlayer } = require('next-contentlayer');
