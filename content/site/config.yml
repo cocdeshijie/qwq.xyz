@@ -1,90 +1,87 @@
 site_info:
-  title: Next Sakurairo
+  title: cocdeshijie の BLog
   author: cocdeshijie
-  profile_image: "/static/next-sakurairo.png"
-  theme_color: "#FFAAA7"
-  theme_color_hue_shift: 30
+  profile_image: "/static/cocdeshijie.png"
+  theme_color: "#F08300"
+  theme_color_hue_shift: 0
 
 posts_config:
-  posts_per_page: 4
+  posts_per_page: 6
 
 header_logo:
-  text_front: Next Sakurairo
+  text_front: cocdeshijie
   text_middle: の
-  text_end: Site
-  text_bottom: work in progress~
+  text_end: Blog
+  text_bottom: qwq~
 
 header_navigation:
   - title: Home
     href: "/"
-  - title: Tags
-    href: "/tags"
   - title: Posts
     href: "/posts"
-  - title: Preview
-    href: "/"
+  - title: About
+    href: "/about-me"
     children:
-      - title: Post Preview
-        href: "/posts/markdown-preview"
-      - title: Page Preview
-        href: "/page-preview"
-      - title: Folder Routing Preview
-        href: "/folder/page-folder-preview"
-      - title: AniList Preview
-        href: "/anilist-preview"
+      - title: About Me
+        href: "/about-me"
+      - title: My Anime List
+        href: "/anime-list"
 
 home_working_on:
   - Next.js
   - Tailwind CSS
   - TypeScript
-  - Jotai
-  - Radix UI
-  - Velite
+  - SolidWorks
+  - Fusion 360
+  - Python
+  - Matlab
+  - C++
+  - Java
+  - FastAPI
+  - React
+  - MySQL
+  - MongoDB
+  - Docker
 
 home_social:
   - name: GitHub
     src: "/static/social-icons/github.svg"
-    href: "https://github.com/cocdeshijie/Next-Sakurairo"
+    href: "https://github.com/cocdeshijie"
   - name: X
     src: "/static/social-icons/x.svg"
-    href: "/"
+    href: "https://x.com/cocdeshijie"
   - name: BiliBili
     src: "/static/social-icons/bilibili.svg"
-    href: "/"
+    href: "https://space.bilibili.com/60559166"
   - name: Telegram
     src: "/static/social-icons/telegram.svg"
-    href: "/"
+    href: "https://t.me/cocdeshijie"
   - name: Discord
     src: "/static/social-icons/discord.svg"
-    href: "/"
-  - name: QQ
-    src: "/static/social-icons/qq.svg"
-    href: "/"
+    href: "https://discord.com/users/390338482951815178"
   - name: Steam
     src: "/static/social-icons/steam.svg"
-    href: "/"
+    href: "https://steamcommunity.com/id/cocdeshijie"
 
 footer:
   line_1:
     - text: Home
       href: "/"
-    - text: Post Preview
-      href: "/posts/markdown-preview"
-    - text: Page Preview
-      href: "/page-preview"
-    - text: AniList Preview
-      href: "/anilist-preview"
     - text: Tags
       href: "/tags"
+    - text: About Me
+      href: "/about-me"
+    - text: My Anime List
+      href: "/anime-list"
   line_2: 誰でも大好き!
   line_3: qwq~
 
 # see https://giscus.app/ for options
 giscus:
-  repo: cocdeshijie/Next-Sakurairo
-  repo_id: R_kgDOLtf1_A
+  repo: cocdeshijie/qwq.xyz
+  repo_id: R_kgDOOirXmA
   category: Announcements
-  category_id: DIC_kwDOLtf1_M4Cpnbn
+  category_id: DIC_kwDOOirXmM4CpqIz
   mapping: url
   strict: "0"
   reactions_enabled: "1"
